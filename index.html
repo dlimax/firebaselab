@@ -1,14 +1,44 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+
 
 <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCn0LTGBMHXzM-RIUpY4EBsK3gh2jDLo28",
-    authDomain: "simplerestaurant-c803b.firebaseapp.com",
-    databaseURL: "https://simplerestaurant-c803b.firebaseio.com",
-    storageBucket: "simplerestaurant-c803b.appspot.com",
+    apiKey: "AIzaSyABsn6GucrcTMnZ0VLjntsm5snilbFBMGM",
+    authDomain: "simplerestaurant-7c9a4.firebaseapp.com",
+    databaseURL: "https://simplerestaurant-7c9a4.firebaseio.com",
+    storageBucket: "simplerestaurant-7c9a4.appspot.com",
   };
   firebase.initializeApp(config);
 </script>
+<hr />
+<ul>
+	<li><a href="http://localhost:5000/#/signin">Sign in</a></li>	
+	<li><a href="http://localhost:5000/#/sessions/create">Criar Sessão de Menu</a></li>	
+	<li><a href="http://localhost:5000/#/sessions">Listar Sessões</a></li>	
+	<li><a href="http://localhost:5000/#/items/create">Criar Item (simultâneamente dentro de sessão e em coleção separada</a></li>	
+	<li><a href="http://localhost:5000/#/items/">Visualizar Items</a></li>	
+	<li><a href="http://localhost:5000/#/menu/">Visualizar Items organizados por sessão</a></li>
+	<li><a href="http://localhost:5000/#/logoff">Log off</a></li>
+</ul>
     
 
+<div ng-view>
+</div>
+
+<script src="app.js"></script>
+
+</html>

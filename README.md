@@ -1,6 +1,6 @@
 // npm install -g firebase-tools
 
-// substituir codigos em index.html
+// substituir código em index.html
 
 // tentar registrar um item
 item = {'name': 'Angus', 'price': 30.5}
