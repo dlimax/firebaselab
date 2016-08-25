@@ -1,9 +1,12 @@
+```
 // npm install -g firebase-tools
 
 // substituir código em index.html
 
 // tentar registrar um item
+
 item = {'name': 'Angus', 'price': 30.5}
+
 firebase.database().ref('items/1').push(item)
 
 // o app possui regras de autenticação e autorização configuráveis.
@@ -16,3 +19,4 @@ firebase.database().ref('items/1').push(item)
 // autenticar
 cred = firebase.auth().signInWithEmailAndPassword('abc@gmail.com', 'xyz')
 
+```
