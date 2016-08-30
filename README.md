@@ -29,6 +29,8 @@
     firebase.database().ref('items/1').push(item)
     ```
 
+    Você receberá uma mensagem de erro.
+
 9. **Criar usuário**. O comando anterior não funcionará, pois, por padrão, é necessário realizar
 autenticação para utilizar o banco de dados do firebase. https://firebase.google.com/docs/database/security/user-security. Vamos então criar um usuário acessando https://firebase.google.com/docs/auth/web/password-auth
 
@@ -37,4 +39,6 @@ autenticação para utilizar o banco de dados do firebase. https://firebase.goog
 	```javascript
 	firebase.auth().signInWithEmailAndPassword('abc@gmail.com', 'xyz')
 	```
+
+11. 
 
